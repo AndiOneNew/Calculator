@@ -61,6 +61,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="/"/>
                                                 <connections>
+                                                    <action selector="equalsMathOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YQH-nv-K0n"/>
                                                     <action selector="mathOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="umR-j7-kZV"/>
                                                 </connections>
                                             </button>
@@ -102,6 +103,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="*"/>
                                                 <connections>
+                                                    <action selector="equalsMathOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dgC-J6-6aZ"/>
                                                     <action selector="mathOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ijX-zb-IWy"/>
                                                 </connections>
                                             </button>
@@ -143,6 +145,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="+"/>
                                                 <connections>
+                                                    <action selector="equalsMathOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5vd-Y4-vk9"/>
                                                     <action selector="mathOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wpG-S6-V2S"/>
                                                 </connections>
                                             </button>
@@ -184,6 +187,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="-"/>
                                                 <connections>
+                                                    <action selector="equalsMathOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QV6-qR-Iqe"/>
                                                     <action selector="mathOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TuI-TN-ekc"/>
                                                 </connections>
                                             </button>

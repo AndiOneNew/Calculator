@@ -22,7 +22,13 @@ class ViewController: UIViewController {
             return Double(result.text!)!
         }
         set {
-            result.text = "\(newValue)"
+            let value = "\(newValue)"
+            let arrayValue = value.components(separatedBy: ".")
+            if arrayValue [1] == "0" {
+                result.text = arrayValue[0]
+            } else {
+                result.text = "\(newValue)"
+            }
             writeNumber = false
         }
     }
@@ -85,11 +91,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func plusMinusNumber(_ sender: UIButton) {
-        if Double(result.text!)! > 0 {
-            result.text = "-" + result.text!
-        } else {
-            result.text!.remove(at: result.text!.startIndex)
-        }
+        inputNumber = -inputNumber
+        
+//        if Double(result.text!)! > 0 {
+//            result.text = "-" + result.text!
+//        } else {
+//            result.text!.remove(at: result.text!.startIndex)
+//        }
     }
     @IBAction func percentOfTheNumber(_ sender: UIButton) {
         if firstNumber == 0 {
